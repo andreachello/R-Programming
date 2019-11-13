@@ -11,7 +11,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   #loop over the number of files to append them to the empty data frame
   for (i in 1:length(files)) {
     
-    data <- rbind(data, read.csv(file[i]))
+    data <- rbind(data, read.csv(files[i]))
     
   }
   

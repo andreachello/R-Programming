@@ -5,7 +5,7 @@ library(lubridate)
 
 data <- fread("household_power_consumption.txt", sep = ";", na.strings = "?")
 
-subsetted_data <- data[data$Date %in% c("1/2/2007", "1/2/2007"), ]
+sub_data <- data[data$Date %in% c("1/2/2007", "1/2/2007"), ]
 
 glob <- sub_data$Global_active_power
 dates <- as.Date(sub_data$Date, format = "%d/%m/%Y")
